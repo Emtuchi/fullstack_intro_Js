@@ -1,0 +1,375 @@
+.Home {
+  background-color: blanchedalmond;
+  padding-bottom: 490px;
+  padding-top: 150px;
+}
+
+.rm-line {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #333;
+  padding: 20px;
+}
+
+header nav a {
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+header nav {
+  display: flex;
+  gap: 50px;
+}
+
+.Home div {
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  padding: 20px 10px;
+  background-color: #333333;
+}
+
+footer nav {
+  display: flex;
+  gap: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.login-Register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 200px;
+  margin: 100px auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Style input fields */
+.login-Register input[type="text"],
+.login-Register input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Remove outline on focus and add subtle shadow */
+.login-Register input[type="text"]:focus,
+.login-Register input[type="password"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  border-color: #007bff;
+}
+
+/* Style the button */
+.login-Register button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Change button color on hover */
+.login-Register button:hover {
+  background-color: #0056b3;
+}
+
+.color_header {
+  background-color: #333;
+}
+
+.color_header a {
+  color: white;
+}
+
+/* General styles for the form container */
+.Post {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  gap: 15px; /* Space between form elements */
+  max-width: 600px; /* Limit the width of the form */
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 20px; /* Padding inside the form for better spacing */
+  border: 1px solid #ccc; /* Border around the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #fff; /* White background for the form */
+  box-sizing: border-box; /* Ensure padding is included in the total width */
+}
+
+/* Style for input fields */
+.Post input[type="text"],
+.Post input[type="title"],
+.Post input[type="summary"],
+.Post input[type="file"] {
+  width: 100%; /* Full width to fit inside the form */
+  padding: 10px; /* Add padding inside input fields */
+  border: 1px solid #ccc; /* Border around inputs */
+  border-radius: 4px; /* Rounded corners for inputs */
+  font-size: 16px; /* Font size inside inputs */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+/* Style for the ReactQuill editor */
+.ql-container {
+  min-height: 200px; /* Set a minimum height for the editor */
+  border-radius: 4px; /* Rounded corners for the editor */
+  font-size: 16px; /* Ensure consistent font size */
+}
+
+/* Button styles */
+.Post button {
+  padding: 10px 20px; /* Add padding to the button */
+  font-size: 16px; /* Font size for button */
+  font-weight: bold; /* Bold text for the button */
+  color: #fff; /* White text color */
+  background-color: #007bff; /* Button background color */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background transition on hover */
+}
+
+/* Button hover effect */
+.Post button:hover {
+  background-color: #0056b3; /* Darker background on hover */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .Post {
+    padding: 15px; /* Reduce padding on smaller screens */
+    max-width: 90%; /* Allow the form to take more width on smaller screens */
+  }
+
+  .Post button {
+    width: 100%; /* Make the button take full width on smaller screens */
+  }
+}
+
+/* Styling the post container */
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align content within the post */
+  gap: 16px;
+  background-color: #f9f9f9;
+  border: 5px solid #ddd; /* Larger border */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  margin: 16px auto; /* Center the post horizontally */
+  max-width: 1000px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.post a {
+  text-decoration: none;
+}
+
+.post:hover {
+  transform: scale(1.02);
+}
+
+/* Styling the image section */
+.post .image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.post .image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: opacity 0.3s;
+}
+
+.post .image img:hover {
+  opacity: 0.9;
+}
+
+/* Styling the texts section */
+.post .texts {
+  padding: 16px;
+  text-align: center; /* Center-align text */
+  color: #333;
+}
+
+/* Styling the title */
+.post .texts h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0073e6;
+  margin: 0 0 8px;
+  transition: color 0.2s ease-in-out;
+}
+
+.post .texts h2:hover {
+  color: #005bb5;
+}
+
+/* Styling the info section */
+.post .texts .info {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 12px;
+  display: flex;
+  gap: 8px;
+  justify-content: center; /* Center-align info items */
+  align-items: center;
+}
+
+.post .texts .info .author {
+  font-weight: bold;
+  color: #333;
+}
+
+.post .texts .info time {
+  color: #999;
+}
+
+/* Styling the summary */
+.post .texts .summary {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+  margin: 0;
+}
+
+/* Styling the post page container */
+.post-page {
+  max-width: 800px;
+  margin: 32px auto;
+  padding: 16px;
+  background-color: #ffffff;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Styling the post title */
+.post-page h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0073e6;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Styling the creation date */
+.post-page time {
+  display: block;
+  font-size: 0.875rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+/* Styling the author */
+.post-page .author {
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+/* Styling the edit button row */
+.post-page .edit-row {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.post-page .edit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #0073e6;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.post-page .edit-btn:hover {
+  background-color: #005bb5;
+}
+
+/* Styling the SVG icon in the edit button */
+.post-page .edit-btn svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2;
+}
+
+/* Styling the post image */
+.post-page .image {
+  text-align: center;
+  margin: 16px 0;
+}
+
+.post-page .image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the content */
+.post-page .content {
+  margin-top: 16px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.post-page .content h2,
+.post-page .content h3 {
+  margin: 16px 0 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.post-page .content p {
+  margin: 8px 0;
+}
+
+.post-page .content img {
+  max-width: 100%;
+  height: auto;
+  margin: 16px 0;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
