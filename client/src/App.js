@@ -10,6 +10,11 @@ import MyStory from "./Pages/MyStories";
 import PostPage from "./Pages/PostPage";
 import EditPost from "./Pages/EditPost";
 
+/**
+ * this is app.js file gives a look at the progression of our code while being built, from making the home page(imports can be used to trace other files)
+ * to other pages
+ */
+
 function App() {
   return (
     <div className="App">
@@ -20,7 +25,7 @@ function App() {
             * element: a way of referring to "components" containing html for rendering
             * path=: think of it like "Route path, path for the route"
             */}
-          <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Layout />}> {/* Layout contains our header and footer cpmponents so that they are spread across every page */}
             <Route index element={<Home />} /> {/* we don't need to put "path=" because we have "index" */}
             <Route path={'/login'} element={<Login />} />
             <Route path={'/register'} element={<Register />} />
